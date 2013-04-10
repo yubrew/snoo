@@ -33,7 +33,7 @@ module Snoo
     # @option opts [String] :modhash The modhash the bot will auth with
     # @option opts [String] :cookies The cookie string the bot will auth with
     def initialize( opts = {} )
-      options = {url: "http://www.reddit.com", useragent: "Snoo ruby reddit api wrapper v#{VERSION}" }.merge opts
+      options = {url: "http://www.reddit.com", useragent: "bitcoin bot /u/yubrew v#{VERSION}" }.merge opts
       @baseurl = options[:url]
       self.class.base_uri options[:url]
       @headers = {'User-Agent' => options[:useragent] }
